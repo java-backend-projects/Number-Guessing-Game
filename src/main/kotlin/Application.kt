@@ -6,7 +6,7 @@ import ru.sug4chy.utils.NumberGuessingGame
 
 fun main() {
     println(greeting())
-    NumberGuessingGame.selectedDifficulty = DifficultyLevel.fromUserInput(readLine() ?: "")
+    NumberGuessingGame.selectedDifficulty = DifficultyLevel.fromUserInput(readln())
 
     println(startGame(NumberGuessingGame.selectedDifficulty))
 
