@@ -7,6 +7,8 @@ object NumberGuessingGame {
     private val guessedNumber = Random.Default.nextInt(from = 1, until = 100)
 
     var attemptsCount: Int = 0
+        private set
+
     lateinit var selectedDifficulty: DifficultyLevel
 
     fun checkAttemptedNumber(attemptedNumber: Int) {
