@@ -6,7 +6,7 @@ import ru.sug4chy.utils.NumberGuessingGame
 
 fun main() {
     println(greeting())
-    NumberGuessingGame.selectedDifficulty = DifficultyLevel.fromUserInput(readln())
+    NumberGuessingGame.selectedDifficulty = DifficultyLevel.fromUserInput(readLine() ?: "")
 
     println(startGame(NumberGuessingGame.selectedDifficulty))
 
@@ -18,6 +18,7 @@ fun main() {
             NumberGuessingGame.checkAttemptedNumber(inputAsInt)
 
             println(congratulations(NumberGuessingGame.attemptsCount))
+            return
         } catch (e: IllegalArgumentException) {
             println(e.message)
         } catch (e: IllegalStateException) {

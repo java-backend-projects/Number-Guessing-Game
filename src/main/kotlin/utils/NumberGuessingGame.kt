@@ -17,7 +17,7 @@ object NumberGuessingGame {
             if (attemptedNumber < guessedNumber) {
                 "Incorrect! The number is greater than $attemptedNumber"
             } else {
-                "Incorrect! The number is less than $guessedNumber"
+                "Incorrect! The number is less than $attemptedNumber"
             }
         }
     }
